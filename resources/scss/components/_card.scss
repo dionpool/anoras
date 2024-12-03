@@ -1,0 +1,32 @@
+.card {
+   border-radius: $border-radius;
+   background-color: $gray-300;
+
+   .card-header {
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      background-color: $gray-200;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+         color: $primary-400;
+         font-weight: 700;
+         transition: color $transition-speed;
+
+         &:hover {
+            color: $primary-500;
+         }
+
+         i {
+            margin-left: 5px;
+         }
+      }
+   }
+
+   .card-content {
+      padding: 16px;
+   }
+}

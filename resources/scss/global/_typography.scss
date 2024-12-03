@@ -1,0 +1,91 @@
+/**
+ * Imports
+ */
+// Noto Sans
+@font-face {
+   font-family: Noto Sans;
+   src: url('/fonts/Noto-Sans/notosans-regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: Noto Sans;
+   src: url('/fonts/Noto-Sans/notosans-bold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+// Object Sans
+@font-face {
+   font-family: Object Sans;
+   src: url('/fonts/Object-Sans/objectsans-heavy-webfont.woff2') format('woff2'),
+        url('/fonts/Object-Sans/objectsans-heavy-webfont.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+/**
+ * Global
+ */
+html, body {
+   font-family: $font-body;
+   line-height: $font-body-lh;
+   font-weight: $font-body-weight;
+   color: $light;
+}
+
+a {
+   color: $light;
+   text-decoration: none;
+
+   &:hover {
+      color: $white;
+   }
+}
+
+i.ra {
+   font-size: 1.25rem;
+}
+
+/**
+ * Heading
+ */
+h1, h2, h3, h4, h5, h6 {
+   font-family: $font-display;
+   font-weight: $font-heading-weight;
+   color: $white;
+}
+
+h1 {
+   font-size: $font-display-h1-size;
+   line-height: $font-display-h1-lh;
+}
+
+h2 {
+   font-size: $font-display-h2-size;
+   line-height: $font-display-h2-lh;
+}
+
+h3 {
+   font-size: $font-display-h3-size;
+   line-height: $font-display-h3-lh;
+}
+
+h4 {
+   font-size: $font-display-h4-size;
+   line-height: $font-display-h4-lh;
+}
+
+h5 {
+   font-size: $font-display-h5-size;
+   line-height: $font-display-h5-lh;
+}
+
+h6 {
+   font-size: $font-display-h6-size;
+   line-height: $font-display-h6-lh;
+}

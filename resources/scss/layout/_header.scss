@@ -1,0 +1,170 @@
+header {
+   .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+
+      .secondary-menu {
+         .navigation {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            li {
+               a:not(.button) {
+                  font-weight: bold;
+                  color: $white;
+                  padding: 10px 20px;
+                  transition: background-color .2s;
+
+                  i {
+                     color: $light;
+                     margin-right: 5px;
+                  }
+
+                  &:hover {
+                     background-color: $gray-300;
+                     border-radius: $border-radius;
+                  }
+               }
+
+               .dropdown {
+                  position: relative;
+                  display: inline-block;
+
+                  .dropdown-toggle {
+                     background-color: transparent;
+                     font-weight: bold;
+                     padding: 10px 20px;
+                     border: none;
+                     font-size: 1rem;
+                     color: $white;
+                     cursor: pointer;
+                     transition: background-color .2s;
+
+                     i {
+                        color: $light;
+                        margin-right: 5px;
+                     }
+
+                     &:hover {
+                        background-color: $gray-300;
+                        border-radius: $border-radius;
+                     }
+                  }
+
+                  .dropdown-menu {
+                     display: none;
+                     position: absolute;
+                     top: calc(100% + 25px);
+                     left: 50%;
+                     transform: translateX(-50%);
+                     padding: 30px;
+                     background-color: $gray-400;
+                     box-shadow: $drop-shadow;
+                     border: 1px solid $gray-200;
+                     border-radius: $border-radius;
+                     overflow: hidden;
+                     z-index: 1;
+                     min-width: 250px;
+
+                     a:not(.button) {
+                        display: block;
+                        padding: 10px 15px;
+                        color: $white;
+                        text-align: center;
+
+                        &:hover:not(.button) {
+                           background-color: $gray-200;
+                           border-radius: $border-radius;
+                        }
+                     }
+
+                     a.button {
+                        display: block;
+                        min-width: 100%;
+                        margin-bottom: 20px;
+                     }
+                  }
+
+                  &.open .dropdown-menu {
+                     display: block;
+                  }
+               }
+            }
+
+            li.logged-in {
+               .dropdown-menu {
+                  a {
+                     margin-bottom: 10px;
+
+                     &:last-of-type {
+                        margin-bottom: 15px;
+                     }
+                  }
+
+                  .button {
+                     min-width: 100%;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .header-bottom {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 8.2fr 2.5fr;
+      width: 100%;
+
+      .primary-menu {
+         .navigation {
+            display: flex;
+            background-color: $gray-300;
+            padding: 20px;
+            border-radius: $border-radius;
+
+            a {
+               padding: 20px;
+               font-weight: 600;
+
+               &:hover {
+                  background-color: $gray-200;
+               }
+            }
+         }
+      }
+
+      .search-bar {
+         position: relative;
+
+         label {
+            i {
+               position: absolute;
+               top: 50%;
+               transform: translateY(-50%);
+               left: 15px;
+            }
+
+            input {
+               background-color: $gray-300;
+               border: none;
+               border-radius: $border-radius;
+               height: 64px;
+               width: 100%;
+               padding-left: 45px;
+               color: $white;
+               font-weight: 600;
+
+               &:focus {
+                  border: none;
+                  outline: none;
+                  background-color: $gray-200;
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,71 @@
+/**
+ * Colors
+ */
+$primary-800: #003f7a;
+$primary-700: #005aad;
+$primary-600: #0074e0;
+$primary-500: #148eff;
+$primary-400: #47a6ff;
+$primary-300: #7abfff;
+$primary-200: #add8ff;
+$primary-100: #e0f0ff;
+
+$gray-700: #111218;
+$gray-600: #15171e;
+$gray-500: #1a1c23;
+$gray-400: #22242c;
+$gray-300: #292b33;
+$gray-200: #414552;
+$gray-100: #6f7584;
+
+$green-600: #54a800;
+$green-500: #6cdb00;
+
+$yellow-600: #cc9000;
+$yellow-500: #ffb400;
+
+$red-900: #420000;
+$red-800: #580000;
+$red-600: #b10000;
+$red-500: #dd0000;
+
+$black: #000000;
+$white: #ffffff;
+$light: rgba(255, 255, 255, .84);
+
+/**
+ * Typography
+ */
+// Fonts
+$font-body: Noto Sans, Helvetica, Arial, sans-serif;
+$font-display: Object Sans, Helvetica, Arial, sans-serif;
+
+// Font sizes
+$font-body-size: 16px;
+$font-display-h1-size: 48px;
+$font-display-h2-size: 40px;
+$font-display-h3-size: 32px;
+$font-display-h4-size: 24px;
+$font-display-h5-size: 20px;
+$font-display-h6-size: 18px;
+
+// Line heights
+$font-body-lh: 24px;
+$font-display-h1-lh: 52px;
+$font-display-h2-lh: 44px;
+$font-display-h3-lh: 36px;
+$font-display-h4-lh: 28px;
+$font-display-h5-lh: 24px;
+$font-display-h6-lh: 22px;
+
+// Other
+$font-body-weight: 400;
+$font-heading-weight: 700;
+
+/**
+ * Other
+ */
+$border-radius: 4px;
+$drop-shadow: 0px 3px 6px rgba(0, 0, 0, .478);
+$container-width: 1600px;
+$transition-speed: .2s;

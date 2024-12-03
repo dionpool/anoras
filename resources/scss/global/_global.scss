@@ -1,0 +1,65 @@
+html, body {
+   background-color: $gray-600;
+}
+
+.container {
+   width: 100%;
+   max-width: $container-width;
+   margin: 0 auto;
+   padding: 0 2rem; /* Slightly larger padding for desktop-first */
+   box-sizing: border-box;
+}
+
+section {
+   padding-top: 64px;
+}
+
+.logo {
+   a {
+      font-family: $font-display;
+      text-transform: uppercase;
+      font-size: $font-display-h4-size;
+      color: $white;
+
+      i {
+         margin-right: 10px;
+         color: $primary-600;
+      }
+   }
+}
+
+/**
+ * Buttons
+ */
+// Global button class
+.button {
+   display: block;
+   padding: 10px 32px;
+   outline: none;
+   border: none;
+   border-radius: $border-radius;
+   text-align: center;
+   font-weight: 600;
+   transition: background-color $transition-speed;
+   cursor: pointer;
+   font-size: 1rem;
+}
+
+// Variants
+.button-primary {
+   background-color: $primary-600;
+   color: $white;
+
+   &:hover {
+      background-color: $primary-700;
+   }
+}
+
+.link {
+   color: $primary-500;
+
+   &:hover {
+      color: $primary-400;
+      text-decoration: underline;
+   }
+}
